@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #000000;
+  color: #e4e4e4;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  position: relative;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.box:hover {
+  background-color: #e4e4e45f;
+}
+
+.bl0 {
+  border-left: 0;
+}
+
+.br0 {
+  border-right: 0;
+}
+
+.bt0 {
+  border-top: 0;
+}
+
+.bb0 {
+  border-bottom: 0;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.players .player {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.players .player_name {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.players .score {
+  font-size: 3rem;
+  color: white;
+}
+
+button {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  outline: none;
+  border: 1px solid white;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  background-color: black;
+  color: #e4e4e4;
+
+  cursor: pointer;
+}
